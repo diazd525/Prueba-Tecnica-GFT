@@ -1,0 +1,402 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "implementacion-flujo-login-portal-saucedemo;happy-path",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "Happy Path",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 292736699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "el usuario ingresa al portal web",
+            "match": {
+              "location": "tests\\steps\\login.steps.js:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 960206200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "hace login con las credenciales \"standard_user\" y \"secret_sauce\"",
+            "match": {
+              "location": "tests\\steps\\login.steps.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 207385600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "agrega un producto al carrito",
+            "match": {
+              "location": "tests\\steps\\login.steps.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 84157400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "completa el checkout",
+            "match": {
+              "location": "tests\\steps\\login.steps.js:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 202524799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "visualiza la notificacion de compra",
+            "match": {
+              "location": "tests\\steps\\login.steps.js:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4867700
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 94747300
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 4
+          },
+          {
+            "name": "@critical",
+            "line": 4
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "implementacion-flujo-login-portal-saucedemo;login-fallido",
+        "keyword": "Scenario",
+        "line": 13,
+        "name": "Login Fallido",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 290575100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 14,
+            "name": "el usuario ingresa al portal web",
+            "match": {
+              "location": "tests\\steps\\login.steps.js:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 828723900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 15,
+            "name": "hace login con las credenciales \"error\" y \"fallido\"",
+            "match": {
+              "location": "tests\\steps\\login.steps.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 159067200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "visualiza un mensaje de error",
+            "match": {
+              "location": "tests\\steps\\login.steps.js:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8561499
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 123014799
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@negative",
+            "line": 12
+          },
+          {
+            "name": "@regression",
+            "line": 12
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "implementacion-flujo-login-portal-saucedemo;login-con-multiples-usuarios",
+        "keyword": "Scenario Outline",
+        "line": 26,
+        "name": "Login con multiples usuarios",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 291917499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 20,
+            "name": "el usuario ingresa al portal web",
+            "match": {
+              "location": "tests\\steps\\login.steps.js:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 823305600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 21,
+            "name": "hace login con las credenciales \"standard_user\" y \"secret_sauce\"",
+            "match": {
+              "location": "tests\\steps\\login.steps.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 175012600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 22,
+            "name": "valida acceso al portal",
+            "match": {
+              "location": "tests\\steps\\login.steps.js:40"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3970500
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 95163399
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 18
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "implementacion-flujo-login-portal-saucedemo;login-con-multiples-usuarios",
+        "keyword": "Scenario Outline",
+        "line": 27,
+        "name": "Login con multiples usuarios",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 359233899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 20,
+            "name": "el usuario ingresa al portal web",
+            "match": {
+              "location": "tests\\steps\\login.steps.js:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1190990099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 21,
+            "name": "hace login con las credenciales \"problem_user\" y \"secret_sauce\"",
+            "match": {
+              "location": "tests\\steps\\login.steps.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 147012400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 22,
+            "name": "valida acceso al portal",
+            "match": {
+              "location": "tests\\steps\\login.steps.js:40"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 957300
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 88477599
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 18
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "implementacion-flujo-login-portal-saucedemo;login-con-multiples-usuarios",
+        "keyword": "Scenario Outline",
+        "line": 28,
+        "name": "Login con multiples usuarios",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 219419499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 20,
+            "name": "el usuario ingresa al portal web",
+            "match": {
+              "location": "tests\\steps\\login.steps.js:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3471066299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 21,
+            "name": "hace login con las credenciales \"performance_glitch_user\" y \"secret_sauce\"",
+            "match": {
+              "location": "tests\\steps\\login.steps.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5171327300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 22,
+            "name": "valida acceso al portal",
+            "match": {
+              "location": "tests\\steps\\login.steps.js:40"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1466799
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 82887500
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 18
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "implementacion-flujo-login-portal-saucedemo",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "Implementacion flujo login portal SauceDemo",
+    "tags": [],
+    "uri": "tests\\features\\login.feature"
+  }
+]
