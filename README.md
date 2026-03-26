@@ -47,10 +47,6 @@ Los reportes se generan a partir de un archivo. JSON
 <img width="1915" height="995" alt="image" src="https://github.com/user-attachments/assets/34618eb5-57a0-46bf-96c5-7231723305ab" />
 <img width="1915" height="995" alt="image" src="https://github.com/user-attachments/assets/34618eb5-57a0-46bf-96c5-7231723305ab" />
 
-
-<img width="486" height="265" alt="image" src="https://github.com/user-attachments/assets/36a30388-4907-4668-bc8b-fe30441af4f2" />
-<img width="486" height="265" alt="image" src="https://github.com/user-attachments/assets/36a30388-4907-4668-bc8b-fe30441af4f2" />
-
 <img width="973" height="544" alt="image" src="https://github.com/user-attachments/assets/7707e4f9-f575-400b-bfcc-28614eed5b54" />
 <img width="973" height="544" alt="image" src="https://github.com/user-attachments/assets/7707e4f9-f575-400b-bfcc-28614eed5b54" />
 
