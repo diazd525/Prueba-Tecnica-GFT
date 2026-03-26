@@ -39,7 +39,7 @@ Para abrir el reporte HTML se puede por los siguientes comandos:
 
 ## 5. Estructura del proyecto 
 
-El proyecto esta implementado con Playwright, Cucumber y JavaScript. se busca implementar buenas prácticas, por lo tanto, se utiliza el uso del patrón POM, uso de selectores robustos y hooks para tener un control de la navegación. 
+El proyecto esta implementado con Playwright, Cucumber y JavaScript. se busca implementar buenas prácticas, por lo tanto, se utiliza el Page Object Model (POM), uso de selectores robustos y hooks para tener un control de la navegación. 
 Los reportes se generan a partir de un archivo. JSON
 
 ## 6. Evidencia de ejecución 
