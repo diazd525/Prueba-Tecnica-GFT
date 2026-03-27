@@ -55,7 +55,9 @@ Los reportes de ejecución se generan a partir de un archivo JSON, el cual es tr
 
 <img width="1915" height="995" alt="image" src="https://github.com/user-attachments/assets/34618eb5-57a0-46bf-96c5-7231723305ab" />
 
+
 <img width="486" height="265" alt="image" src="https://github.com/user-attachments/assets/e199b46b-0276-4411-a440-1edcdf0a9696" />
+
 
 <img width="973" height="544" alt="image" src="https://github.com/user-attachments/assets/7707e4f9-f575-400b-bfcc-28614eed5b54" />
 
@@ -66,6 +68,7 @@ El proyecto cuenta con una carpeta llamada **dataBase**, la cual contiene los qu
 La implementación de la base de datos se realizó utilizando **PostgreSQL 15**, y la base de datos se encuentra publica y accesible con el nombre "Spa".
 
 Las credenciales necesarias para la conexión son las siguientes:
+
 
 <img width="688" height="547" alt="image" src="https://github.com/user-attachments/assets/783acfc4-5a01-4424-8e2d-f89580a19952" />
 
