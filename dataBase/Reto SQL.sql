@@ -1,5 +1,6 @@
 
--- Crear Tablas-----
+------- Crear Tablas-------
+
 CREATE TABLE Cliente (
     id SERIAL PRIMARY KEY,
     nombre VARCHAR(40) NOT NULL,
@@ -43,7 +44,7 @@ CREATE TABLE Visitan (
     FOREIGN KEY (idCliente) REFERENCES Cliente(id)
 );
 
------ Insertar Datos ---------------
+--------------Insertar Datos ---------------
 
 INSERT INTO Cliente (nombre, apellidos, ciudad) VALUES
 ('Juan', 'Perez', 'Medellín'),
@@ -71,7 +72,7 @@ INSERT INTO Visitan VALUES
 (1,2,CURRENT_DATE - INTERVAL '20 days'),
 (2,1,CURRENT_DATE - INTERVAL '5 days');
 
-
+--------Implementación de los Query----------------
 
 ----- Query 1-----
 SELECT c.nombre, c.apellidos
@@ -81,13 +82,12 @@ JOIN Sucursal s ON s.id = v.idSucursal
 WHERE s.nombre = 'Sucursal Norte'
 AND v.fechaVisita >= CURRENT_DATE - INTERVAL '1 month';
 
------ Query 2-----
+------Query 2-----
 SELECT s.nombre, COUNT(DISTINCT v.idCliente) AS total_clientes
 FROM Sucursal s
 LEFT JOIN Visitan v ON s.id = v.idSucursal
 GROUP BY s.nombre
 ORDER BY total_clientes DESC;
-
 
 ----- Query 3-----
 SELECT p.nombre
@@ -129,7 +129,6 @@ GROUP BY c.id, s.nombre;
 DELETE FROM visitan;
 DELETE FROM inscripcion;
 DELETE FROM disponibilidad;
-
 DELETE FROM producto;
 DELETE FROM sucursal;
 DELETE FROM cliente;
