@@ -1,3 +1,4 @@
+
 -- Crear Tablas-----
 CREATE TABLE Cliente (
     id SERIAL PRIMARY KEY,
