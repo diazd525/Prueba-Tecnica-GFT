@@ -47,7 +47,7 @@ Se ha estructurado el proyecto de forma modular, separando los archivos en featu
 
 Se implementa el patrón Page Object Model (POM) para abstraer la lógica de interacción con la interfaz, mejorando la legibilidad y reduciendo la duplicación de código.
 
-También se emplean selectores robustos, basados en atributos como `data-test`, lo que garantiza mayor estabilidad en las pruebas frente a cambios en la interfaz de usuario.
+También se emplean selectores robustos, basados en atributos, lo que garantiza mayor estabilidad en las pruebas frente a cambios en la interfaz de usuario.
 
 Los reportes de ejecución se generan a partir de un archivo JSON, el cual es transformado en un reporte HTML para facilitar la visualización de los resultados.
 
